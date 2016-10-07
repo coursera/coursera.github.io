@@ -6226,7 +6226,13 @@ button.close {
   width: 1200px; }
 
 .repo-panel {
-  width: 33%;
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  .repo-panel {
+    width: 33%;
+  }
 }
 
 .repo-inner-panel {
@@ -6505,6 +6511,7 @@ body {
 
   .c-job-box, .c-main-job-box {
     padding: 20px 10px; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   body {
     margin-bottom: 281px; }
