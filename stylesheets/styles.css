@@ -6292,9 +6292,16 @@ button.close {
 }
 
 .repo-language-link {
-  flex: 1;
   cursor: pointer;
+  width: 25%;
 }
+
+@media (min-width: 992px) {
+  .repo-language-link {
+    width: 10%;
+  }
+}
+
 
 .repo-language-link-on {
   background: #eee;
