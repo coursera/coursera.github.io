@@ -1,10 +1,212 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Opensource @ Coursera</title>
-  </head>
-  <body>
+<html>
 
-  </body>
+<head>
+    <title>Building Coursera | Open Source</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel='alternate' type='application/rss+xml' title='RSS' href='building.coursera/blog.rss' />
+    <link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon' />
+    <link href='stylesheets/site.css' rel='stylesheet' />
+    <link href='stylesheets/clean.css' rel='stylesheet' />
+    <link href='stylesheets/styles.css' rel='stylesheet' />
+    <link href='stylesheets/mui.min.css' rel='stylesheet' />
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class='c-navbar navbar navbar-default navbar-fixed-top' data-spy="affix" data-offset-top="60">
+    <div class='container'>
+        <div class='navbar-header'>
+            <button type='button'
+                    class='c-mobile-navbar navbar-toggle collapsed'
+                    data-toggle='collapse'
+                    data-target='#building-coursera-nav1'
+                    aria-expanded='false'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <div class='c-brand navbar-brand'>
+                <a href='https://www.coursera.org/' class="coursera-link"></a>
+                <a href='/#' class="home-link">OPEN SOURCE</a>
+            </div>
+        </div>
+        <div class='collapse navbar-collapse' id='building-coursera-nav1'>
+            <ul class='c-nav nav navbar-nav navbar-right'>
+                <li><a href="https://github.com/coursera"><i class='fa fa-github' aria-hidden='true'></i> <span id="repo-counts-repos"></span></a></li>
+                <li><a href="https://github.com/coursera"><i class='fa fa-code-fork' aria-hidden='true'></i> <span id="repo-counts-forks"></span></a></li>
+                <li><a href="https://github.com/coursera"><i class='fa fa-star' aria-hidden='true'></i> <span id="repo-counts-stars"></span></a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="c-header c-header-default">
+    <a href="/#"><div class="c-transparent-overlay"></div></a>
+    <div class="c-header-container">
+        <div class="c-building-white">
+          We<img class="c-coursera-white" src="https://d120jmftguczr4.cloudfront.net/img/main/coursera-logo.svg" />Open Source
+        </div>
+    </div>
+  </div>
+
+  <div class="c-item-container container">
+    <div class="row">
+  
+      <div class="c-item">
+          <div class='c-item-title'>
+            We build on top of Play, Android, Nginx, Ubuntu, React and other open source projects. Below are some of Coursera's own contributions to the open source community.
+          </div>
+          <hr />
+      </div>
+  
+      <div class="c-item">
+        <div style="display: flex; flex-wrap: wrap;" id="repo-highlights">
+
+          <div class="repo-panel repo-panel-highlight" id="repo-highlight-template" style="display:none;">
+            <div class='mui-panel repo-inner-panel' style="background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.25))">
+              <div class='repo-inner-text'>
+                <div style='margin-bottom:10px;'>
+                  <a href='' class='repo-title-link'>
+                    <h2 class='repo-title-text' style='margin-bottom:0px;margin-top:0px;'></h2>
+                  </a>
+                  <span class='repo-language-text' style='font-style:italic;font-size:0.85em;'></span>
+                </div>
+                <div class="repo-description-text"></div>
+              </div>
+              <div class='repo-panel-bottom-bar'>
+                <div class='repo-panel-bottom-bar-tab'>
+                  <i class='fa fa-code-fork' aria-hidden='true'></i>
+                  <span class='repo-forks-text'></span>
+                </div>
+                <div class='repo-panel-bottom-bar-tab'>
+                  <i class='fa fa-star' aria-hidden='true'></i>
+                  <span class='repo-stars-text'></span>
+                </div>
+                <div class='repo-panel-bottom-bar-tab'>
+                  <a href='' class='repo-link'>
+                    <i class='fa fa-github' aria-hidden='true'></i>
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+      <div class="c-item">
+        <hr />
+        <div id="repo-languages" style='text-align:center;display: flex;margin-bottom: 15px;'>
+        </div>
+        <div style="display: flex; flex-wrap: wrap;" id="repo-others">
+
+          <div class="repo-panel" id="repo-template" style="display:none;">
+            <div class='mui-panel repo-inner-panel'>
+              <div class='repo-inner-text'>
+                <div style='margin-bottom:10px;'>
+                  <a href='' class='repo-title-link'>
+                    <h2 class='repo-title-text' style='margin-bottom:0px;margin-top:0px;'></h2>
+                  </a>
+                  <span class='repo-language-text' style='font-style:italic;font-size:0.85em;'></span>
+                </div>
+                <div class='repo-description-text'></div>
+              </div>
+              <div class='repo-panel-bottom-bar'>
+                <div class='repo-panel-bottom-bar-tab'>
+                  <i class='fa fa-code-fork' aria-hidden='true'></i>
+                  <span class='repo-forks-text'></span>
+                </div>
+                <div class='repo-panel-bottom-bar-tab'>
+                  <i class='fa fa-star' aria-hidden='true'></i>
+                  <span class='repo-stars-text'></span>
+                </div>
+                <div class='repo-panel-bottom-bar-tab'>
+                  <a href='' class='repo-link'>
+                    <i class='fa fa-github' aria-hidden='true'></i>
+                    Repo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="c-footer">
+    <div class="c-footer-container container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <a href="https://www.coursera.org/"><img class="c-footer-logo" src='https://d120jmftguczr4.cloudfront.net/img/main/coursera-logo.svg'/></a>
+                <p>Coursera provides universal access to the world’s best education, partnering with top universities and organizations to offer courses online.</p>
+                <span class="c-footer-caption-text">© 2016 Coursera Inc. All rights reserved.</span>
+            </div>
+            <div class="c-footer-column c-footer-company col-md-2 col-sm-3 col-xs-6">
+                <ul>
+                    <li>COMPANY</li>
+                    <li><a href="https://www.coursera.org/about/" target="_blank">About</a></li>
+                    <li><a href="https://www.coursera.org/about/people" target="_blank">People</a></li>
+                    <li><a href="https://www.coursera.org/about/leadership" target="_blank">Leadership</a></li>
+                    <li><a href="https://www.coursera.org/about/careers" target="_blank">Careers</a></li>
+                </ul>
+            </div>
+            <div class="c-footer-column c-footer-friends col-md-2 col-sm-3">
+                <ul>
+                    <li>FRIENDS</li>
+                    <li><a href="https://www.coursera.org/about/partners">Partners</a></li>
+                    <li><a href="https://enterprise.coursera.org">Companies</a></li>
+                    <li><a href="https://www.coursera.org/about/programs">Programs</a></li>
+                    <li><a href="http://tech.coursera.org/app-platform">Developers</a></li>
+                    <li><a href="https://www.coursera.org/about/translate">Translate</a></li>
+                </ul>
+            </div>
+            <div class="c-footer-column col-md-2 col-sm-3 col-xs-6">
+                <ul>
+                    <li>CONNECT</li>
+                    <li><a href="https://plus.google.com/+Coursera" target="_blank"
+                           title="Follow Coursera on Google+">Google+</a></li>
+                    <li><a href="http://twitter.com/coursera"
+                           target="_blank" title="Follow Coursera on Twitter">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/Coursera"
+                           target="_blank" title="Follow Coursera on Facebook">Facebook</a></li>
+                    <li><a class='rss' href='/blog.rss'>RSS</a>
+</li>
+                </ul>
+            </div>
+            <div class="c-footer-column col-md-2 col-sm-3 col-xs-6">
+                <ul>
+                    <li>MORE</li>
+                    <li><a href="https://building.coursera.org/engineering/">Engineering Blog</a></li>
+                    <li><a href='/app-platform'>App-Platform</a></li>
+                    <li><a href="https://building.coursera.org/blog/2014/09/08/using-and-contributing-to-open-source-at-coursera/">Open Source</a></li>
+                    <li><a href="https://www.youtube.com/user/CourseraTalks">Tech Talks</a></li>
+                    <li><a href="https://twitter.com/courseraeng">@CourseraEng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28377374-7']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script src="javascript/github.js"></script>
+  <script src="javascript/site.js"></script>
+</body>
 </html>
